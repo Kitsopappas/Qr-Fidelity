@@ -34,10 +34,6 @@ public class MainActivity extends Activity {
 
 		getS = new QrFidelityReaderF();
 
-		// QrFidelityReaderF.getSSID();
-
-		
-
 		final ImageButton connect = (ImageButton) findViewById(R.id.connect);
 
 		// listeners
@@ -106,12 +102,11 @@ public class MainActivity extends Activity {
 				networkSSID = getS.getSSID(x);
 				pass = getS.getPass(x);
 				Log.i("ssid", networkSSID);
-				Log.i("pass",pass);
+				Log.i("pass", pass);
 
 				WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
 				if (wifiManager.isWifiEnabled()) {
 					connectTo(networkSSID, pass);
-					
 
 				} else {
 					wifiManager.setWifiEnabled(true);

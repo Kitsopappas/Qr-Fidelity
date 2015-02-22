@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.support.v7.app.ActionBarDrawerToggle"/>
+<fullyQualifiedTypeName name="com.qrlab.qrfidelity.R"/>
+<fullyQualifiedTypeName name="com.qrlab.qrfidelity.model.NavDrawerItem"/>
+<fullyQualifiedTypeName name="com.qrlab.qrfidelity.adapter.NavDrawerListAdapter"/>
+<fullyQualifiedTypeName name="android.app.FragmentManager"/>
+<fullyQualifiedTypeName name="android.app.Fragment"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="com.qrlab.qrfidelity.logic.QrFidelityReaderF"/>
+<fullyQualifiedTypeName name="com.qrlab.qrfidelity.R.id"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+</qualifiedTypeNameHistroy>

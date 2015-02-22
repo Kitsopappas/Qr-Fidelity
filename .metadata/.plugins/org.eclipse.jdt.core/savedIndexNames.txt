@@ -1,6 +1,6 @@
 INDEX VERSION 1.127+C:\Users\xristos\Documents\Qr Fidelity\.metadata\.plugins\org.eclipse.jdt.core
-1568610721.index
 2008598900.index
 1398750665.index
 1284074322.index
+3703556168.index
 3877753359.index

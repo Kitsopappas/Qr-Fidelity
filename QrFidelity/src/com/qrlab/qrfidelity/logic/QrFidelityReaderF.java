@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 public class QrFidelityReaderF {
 
 	public String getSSID(String str) {
-		//String str = "<ssid> Kitsopappas </ssid> <pass>7Zdd31s0</pass>";
+		//String str = "<ssid>Kitsopappas</ssid> <pass>7Zdd31s0</pass>";
 		final Pattern pattern = Pattern.compile("<ssid>(.+?)</ssid>");
 		final Matcher matcher = pattern.matcher(str);
 		matcher.find();
