@@ -35,8 +35,8 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 ...}
 
 ## Text for the Qr sample
-<ssid>networkSSID</ssid> 
-<pass>password</pass>
+###########<ssid>networkSSID</ssid> 
+###########<pass>password</pass>
 
 
 ## Images
