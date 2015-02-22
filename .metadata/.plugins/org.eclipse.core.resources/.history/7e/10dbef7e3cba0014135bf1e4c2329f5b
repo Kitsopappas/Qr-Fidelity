@@ -1,0 +1,20 @@
+package com.qrlab.qrfidelity.logic;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
+public class QrFidelityReaderF {
+
+	public static String getSSID() {
+		String str = "<ssid> AFFF </ssid>";
+		final Pattern pattern = Pattern.compile("<tag>(.+?)</tag>");
+		final Matcher matcher = pattern.matcher("<tag>String I want to extract</tag>");
+		matcher.find();
+		//System.out.println(matcher.group(1)); // Prints String I want to extract
+
+		return matcher.group(1);
+
+	}
+
+}

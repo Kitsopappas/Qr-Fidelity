@@ -1,0 +1,13 @@
+package com.qrlab.qrfidelity.logic;
+
+
+public class QrFidelityReaderF {
+	
+	public static String getSSID(){
+		String str = "<ssid> AFFF </ssid>";
+		String ssid = str.substring(str.indexOf("[") + 1, str.indexOf("]"));
+		return ssid;
+	
+	}
+
+}

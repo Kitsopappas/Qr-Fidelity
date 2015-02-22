@@ -1,0 +1,18 @@
+package com.qrlab.qrfidelity.logic;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class QrFidelityReaderF {
+
+	public static String getSSID() {
+		String str = "<ssid> AFFF </ssid>";
+		Pattern pattern = Pattern.compile("<-(.+?)->", Pattern.DOTALL);
+
+		Matcher matcher = pattern.matcher(str);
+
+		return matcher.group(1);
+
+	}
+
+}

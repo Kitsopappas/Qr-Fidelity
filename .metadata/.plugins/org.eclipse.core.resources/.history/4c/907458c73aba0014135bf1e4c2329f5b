@@ -1,0 +1,14 @@
+package com.qrlab.qrfidelity.logic;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class QrFidelityReaderF {
+	
+	public static String getSSID(){
+		String str = "<> AFFF </>";
+		String ssid = str.replaceAll("wastechnology", "");
+	
+	}
+
+}

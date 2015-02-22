@@ -1,0 +1,9 @@
+package com.qrlab.qrfidelity;
+
+import android.app.Fragment;
+
+public class ConnectToWifi extends Fragment{
+	
+	public CommunityFragment(){}
+
+}

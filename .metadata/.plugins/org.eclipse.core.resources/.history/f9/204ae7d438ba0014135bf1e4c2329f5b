@@ -1,0 +1,19 @@
+package com.qrlab.qrfidelity;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageButton;
+
+public class ConnectToWifi extends Fragment {
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+			Bundle savedInstanceState) {
+		View v = inflater.inflate(R.layout.connect_wifi_fragment,
+				container, false);
+		ImageButton connect = (ImageButton) 
+		return v;
+	}
+}

@@ -1,0 +1,21 @@
+package com.qrlab.qrfidelity.logic;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import android.widget.Toast;
+
+public class QrFidelityReaderF {
+	
+	public static String getSSID(){
+		String str = "<> AFFF </>";
+	    Pattern pattern = Pattern.compile("<>(.*?)</>");
+	    Matcher matcher = pattern.matcher(str);
+	    while (matcher.find()) {
+	    	Toast.makeText(this, "msg msg", Toast.LENGTH_LONG).show();
+	    }	
+	    return matcher.group(1);
+	
+	}
+
+}
