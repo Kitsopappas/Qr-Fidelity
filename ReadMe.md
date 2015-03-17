@@ -4,7 +4,7 @@
 Is an android app that scans a specific qr code and connects to a wifi that is associated with the qr
 
 ## Code Example
-
+```sh
 private void connectTo(String SSID, String password) 
 {
 		WifiConfiguration wifiConfig = new WifiConfiguration();
@@ -22,9 +22,9 @@ private void connectTo(String SSID, String password)
 		// getSystemService(Context.WIFI_SERVICE);
 
 	}
-
+```
 ## Code Example for the qr scanner
-
+```sh
 protected void onActivityResult(int requestCode, int resultCode, Intent data) 
 {
 		switch (requestCode) {
@@ -35,11 +35,12 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data)
 				networkSSID = getS.getSSID(x);
 
 ...}
-
+```
 ## Text for the Qr sample
-<ssid>networkSSID</ssid><pass>password</pass>
-
-
+```sh
+<ssid>networkSSID</ssid>
+<pass>password</pass>
+```
 ## Images
 
 ###### Screen Shot
