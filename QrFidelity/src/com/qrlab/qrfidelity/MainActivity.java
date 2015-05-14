@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ public class MainActivity extends Activity {
 	private static final int ZBAR_SCANNER_REQUEST = 0;
 	private static final int ZBAR_QR_SCANNER_REQUEST = 1;
 	QrFidelityReaderF getS;
+	String url = "http://83.212.112.221/qrfi/products.php?cmd=";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -99,8 +101,8 @@ public class MainActivity extends Activity {
 		case ZBAR_QR_SCANNER_REQUEST:
 			if (resultCode == RESULT_OK) {
 				String x = data.getStringExtra(ZBarConstants.SCAN_RESULT);
-				networkSSID = getS.getSSID(x);
-				pass = getS.getPass(x);
+				networkSSID = getS.getStuff(x,QrFidelityReaderF.SSID);
+				pass = getS.getStuff(x,QrFidelityReaderF.PASS);
 				Log.i("ssid", networkSSID);
 				Log.i("pass", pass);
 
@@ -112,6 +114,10 @@ public class MainActivity extends Activity {
 					wifiManager.setWifiEnabled(true);
 					connectTo(networkSSID, pass);
 				}
+				
+				Intent i = new Intent(Intent.ACTION_VIEW);
+				i.setData(Uri.parse(url+getS.getStuff(x,QrFidelityReaderF.USER)));
+				startActivity(i);
 
 			} else if (resultCode == RESULT_CANCELED && data != null) {
 				String error = data.getStringExtra(ZBarConstants.ERROR_INFO);

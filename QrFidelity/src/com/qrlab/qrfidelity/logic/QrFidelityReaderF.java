@@ -5,23 +5,16 @@ import java.util.regex.Pattern;
 
 
 public class QrFidelityReaderF {
-
-	public String getSSID(String str) {
+	public static int USER = 1;
+	public static int SSID = 2;
+	public static int PASS = 3;
+	public String getStuff(String str,int group) {
 		//String str = "<ssid>Kitsopappas</ssid> <pass>7Zdd31s0</pass>";
-		final Pattern pattern = Pattern.compile("<ssid>(.+?)</ssid>");
+		final Pattern pattern = Pattern.compile("<u>(.+?)</u><s>(.+?)</s><p>(.+?)</p>");
 		final Matcher matcher = pattern.matcher(str);
 		matcher.find();
-		return matcher.group(1);
+		return matcher.group(group);
 
 	}
 	
-	public String getPass(String str) {
-		//String str = "<ssid> Kitsopappas </ssid> <pass>7Zdd31s0</pass>";
-		final Pattern pattern = Pattern.compile("<pass>(.+?)</pass>");
-		final Matcher matcher = pattern.matcher(str);
-		matcher.find();
-		return matcher.group(1);
-
-	}
-
 }

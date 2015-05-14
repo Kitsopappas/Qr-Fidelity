@@ -1632,10 +1632,11 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020030;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
-        public static final int button_custom=0x7f020033;
-        public static final int ic=0x7f020034;
-        public static final int ic_launcher=0x7f020035;
-        public static final int rounded_panel=0x7f020036;
+        public static final int banner=0x7f020033;
+        public static final int button_custom=0x7f020034;
+        public static final int ic=0x7f020035;
+        public static final int ic_launcher=0x7f020036;
+        public static final int rounded_panel=0x7f020037;
     }
     public static final class id {
         public static final int action_bar=0x7f090031;
@@ -1651,13 +1652,13 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090042;
+        public static final int action_settings=0x7f090040;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
-        public static final int connect=0x7f090041;
+        public static final int connect=0x7f09003f;
         public static final int decor_content_parent=0x7f09002f;
         public static final int default_activity_button=0x7f090024;
         public static final int dialog=0x7f090019;
@@ -1681,7 +1682,6 @@ containing a value of this type.
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
-        public static final int relativeLayout1=0x7f09003f;
         public static final int search_badge=0x7f090035;
         public static final int search_bar=0x7f090034;
         public static final int search_button=0x7f090036;
@@ -1699,7 +1699,6 @@ containing a value of this type.
         public static final int split_action_bar=0x7f090004;
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
-        public static final int textView1=0x7f090040;
         public static final int title=0x7f090027;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
